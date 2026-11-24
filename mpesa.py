@@ -32,3 +32,19 @@ S_CONTEXT = "The conversation is a record of the expenses the user reported in o
 S_CONSTRAINTS = "Use only amounts the user gave you. Never invent an expense. Give exactly three ways to save, each practical for someone in Kenya and based on this user's own spending."
 S_OUTPUT = 'Reply ONLY with valid JSON and nothing else, with no markdown. Use exactly these field names and no others: "summary" (2 or 3 short sentences), "breakdown" (an object of category and total KES), "total_spent" (a number), "ways_to_save" (a list of exactly three short tips).'
 SUMMARY_PROMPT = S_ROLE + "\n" + S_TASK + "\n" + S_CONTEXT + "\n" + S_CONSTRAINTS + "\n" + S_OUTPUT
+
+# --- RAG knowledge base: saving tips the AI can use ---
+KNOWLEDGE_BASE = [
+    {"keywords": ["matatu", "transport", "fare", "boda", "uber", "bolt"],
+     "tip": "Fares often rise at peak hours and when it rains, so travelling a little earlier or later can cost less. Walk short distances when it is safe."},
+    {"keywords": ["airtime", "data", "bundle", "safaricom"],
+     "tip": "Compare daily, weekly and monthly bundles before buying. A bundle that matches your real use is usually cheaper than many small top-ups."},
+    {"keywords": ["food", "lunch", "supper", "breakfast", "groceries"],
+     "tip": "Carrying lunch from home a few days a week usually costs less than buying it daily. Buy staples like rice, beans and maize flour in larger packs when you can."},
+    {"keywords": ["rent", "house", "landlord"],
+     "tip": "Set aside rent as soon as money comes in, so it is not spent on small things during the month."},
+    {"keywords": ["mpesa", "m-pesa", "withdraw", "send", "sent", "fee", "charges"],
+     "tip": "M-Pesa send and withdrawal charges add up. Check the current charges, and pay through a till or paybill where it is offered, instead of withdrawing cash first."},
+    {"keywords": ["save", "saving", "savings", "budget", "salary", "income"],
+     "tip": "Treat saving like a bill: move a small fixed amount to a separate savings place on payday, instead of saving whatever is left."},
+]
