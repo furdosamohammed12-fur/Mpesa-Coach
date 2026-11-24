@@ -210,3 +210,56 @@ def new_session():
         with open(filename, "w") as f:
             json.dump({"conversation": session_log, "summary": summary}, f, indent=2)
         print("Session saved to", filename)
+
+        #Opening a past session:
+def open_past_session():
+    if not os.path.exists("sessions"):
+        print("No saved sessions yet")
+        return
+    files=sorted(os.listdir("sessions"))
+    if not files:
+        print("No saved sessions yet.")
+        return
+    print("\nSaved sessions:")
+    for number, name in enumerate(files, start=1):
+        print(number, "-", name)
+    choice=input("Enter the number of the session to open:").strip()
+    try:
+        index=int(choice) - 1
+        if index < 0 or index >= len(files):
+            print("That number is not in the list.")
+            return
+        with open("sessions/" + files[index], "r") as f:
+            saved = json.load(f)
+        print("\n---" + files[index] + "---")
+        for entry in saved["conversation"]:
+            print(entry["role"] + ": " + entry ["text"])
+    except ValueError:
+        print("Please type a number.")
+    except FileNotFoundError:
+        print("That session file could not be found.")
+    except(json.JSONDecodeError, KeyError):
+        print("That session file is damaged and cannot be read.")
+                
+
+#Main Menu
+def main_menu():
+    while True:
+        print("\n=== Pesa Coach ===")
+        print("1. Start a new session")
+        print("2. Open a past session")
+        print("3. Exit")
+        choice=input("Choose 1,2 or 3: ").strip()
+        
+        if choice=="1":
+            new_session()
+        elif choice=="2":
+            open_past_session()
+        elif choice=="3":
+            print("Goodbye!")
+            break
+        else:
+            print("Please choose 1, 2, or 3.")
+            
+if _name=="main_":
+    main_menu()
