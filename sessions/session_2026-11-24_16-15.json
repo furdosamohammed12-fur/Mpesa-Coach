@@ -1,0 +1,32 @@
+{
+  "conversation": [
+    {
+      "role": "user",
+      "text": "I spent 200 on chips"
+    },
+    {
+      "role": "coach",
+      "text": "Got it! I've logged KES 200 for chips under food. Keep them coming\u2014what else did you spend on today?"
+    },
+    {
+      "role": "user",
+      "text": "advice me on cheaper food"
+    },
+    {
+      "role": "coach",
+      "text": "Carrying lunch from home a few days a week usually costs less than buying it daily. Also, buy staples like rice, beans and maize flour in larger packs when you can!"
+    }
+  ],
+  "summary": {
+    "summary": "In this session, you reported spending a total of KES 200. Your entire expenditure went towards food after buying chips. Keeping track of small snack purchases is a great step toward better budgeting.",
+    "breakdown": {
+      "food": 200
+    },
+    "total_spent": 200,
+    "ways_to_save": [
+      "Prepare cheap snacks like boiled maize, eggs, or sweet potatoes at home to avoid buying takeaway chips.",
+      "Set a strict weekly snack allowance on M-Pesa to keep small daily food expenses from accumulating.",
+      "Buy raw potatoes from local mama mbogas in bulk if you want to make your own fried chips at a fraction of the cost."
+    ]
+  }
+}

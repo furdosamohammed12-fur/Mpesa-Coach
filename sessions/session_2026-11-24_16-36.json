@@ -1,0 +1,32 @@
+{
+  "conversation": [
+    {
+      "role": "user",
+      "text": "helpe me buy food"
+    },
+    {
+      "role": "coach",
+      "text": "I can help you track your food spending! How much did you spend on food? Tip: Buy staples like rice, beans and maize flour in larger packs when you can to save money."
+    },
+    {
+      "role": "user",
+      "text": "300 on tea"
+    },
+    {
+      "role": "coach",
+      "text": "Got it! I've added KES 300 for tea under food. Your total food spending is now KES 300."
+    }
+  ],
+  "summary": {
+    "summary": "During this session, you spent a total of KES 300, which was used for tea under the food category. Tracking daily small expenses like tea runs is a great step toward managing your money. Staying consistent will help you see exactly where your shillings go each month.",
+    "breakdown": {
+      "food": 300
+    },
+    "total_spent": 300,
+    "ways_to_save": [
+      "Consider making tea at home and carrying it in a flask to save on daily buying costs.",
+      "Buy tea leaves and sugar in bulk from a local supermarket or wholesale shop to lower per-cup expenses.",
+      "Set a dedicated weekly M-Pesa budget for snacks and drinks to avoid overspending on small daily purchases."
+    ]
+  }
+}

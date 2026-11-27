@@ -1,0 +1,50 @@
+{
+  "conversation": [
+    {
+      "role": "user",
+      "text": "ispend 300 for uber"
+    },
+    {
+      "role": "coach",
+      "text": "Got it! I have recorded KES 300 for Uber under transport. Tip: Fares often rise at peak hours and when it rains, so travelling a little earlier or later can cost less. Walk short distances when it is safe."
+    },
+    {
+      "role": "user",
+      "text": "ispend 200 lunch"
+    },
+    {
+      "role": "coach",
+      "text": "Awesome, I have added KES 200 for lunch to your food total! Your total spending is now KES 500. Tip: Carrying lunch from home a few days a week usually costs less than buying it daily."
+    },
+    {
+      "role": "user",
+      "text": "ispend 100 tea"
+    },
+    {
+      "role": "coach",
+      "text": "Noted! I've added KES 100 for tea to your food category. That brings your food total to KES 300 and total spending so far to KES 600. You're doing great keeping track!"
+    },
+    {
+      "role": "user",
+      "text": "ispend 1000 airtime"
+    },
+    {
+      "role": "coach",
+      "text": "Got it! Added KES 1000 to airtime. Your total spending is now KES 1600. Tip: Compare daily, weekly and monthly bundles before buying. A bundle that matches your real use is usually cheaper than many small top-ups."
+    }
+  ],
+  "summary": {
+    "summary": "In this session, you spent a total of KES 1,600. Your biggest expense was on airtime at KES 1,000, while transport and food accounted for KES 300 each. Keeping track of these regular purchases will help you take control of your budget.",
+    "breakdown": {
+      "airtime": 1000,
+      "food": 300,
+      "transport": 300
+    },
+    "total_spent": 1600,
+    "ways_to_save": [
+      "Buy weekly or monthly data and call bundles instead of pure airtime to get more value for KES 1,000.",
+      "Carry lunch or tea from home a few days a week to lower your daily snacks and meal costs.",
+      "Use matatus or walk short distances when safe instead of taking an Uber to reduce transport expenses."
+    ]
+  }
+}
