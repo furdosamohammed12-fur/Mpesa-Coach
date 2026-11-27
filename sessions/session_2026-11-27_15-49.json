@@ -1,0 +1,50 @@
+{
+  "conversation": [
+    {
+      "role": "user",
+      "text": "ispend 300 uber"
+    },
+    {
+      "role": "coach",
+      "text": "Got it! I've logged KES 300 for transport. Keep in mind that fares often rise at peak hours and when it rains, so travelling a little earlier or later can cost less!"
+    },
+    {
+      "role": "user",
+      "text": "ispend 200 lunch"
+    },
+    {
+      "role": "coach",
+      "text": "Logged KES 200 for lunch! Carrying lunch from home a few days a week usually costs less than buying it daily."
+    },
+    {
+      "role": "user",
+      "text": "ispend tea 100"
+    },
+    {
+      "role": "coach",
+      "text": "Added KES 100 for tea under food! Small daily treats add up quickly, so tracking them is a great move. Your total spend is now KES 600."
+    },
+    {
+      "role": "user",
+      "text": "ispend airtime 1000"
+    },
+    {
+      "role": "coach",
+      "text": "Logged KES 1,000 for airtime! Compare daily, weekly and monthly bundles before buying. A bundle that matches your real use is usually cheaper than many small top-ups."
+    }
+  ],
+  "summary": {
+    "summary": "In this session, you recorded spending a total of KES 1,600 across transport, food, and airtime. Your biggest single expense was airtime, taking up KES 1,000 of your total budget. Tracking small daily habits like tea, lunch, and cab rides helps you see where your money goes.",
+    "breakdown": {
+      "transport": 300,
+      "food": 300,
+      "airtime": 1000
+    },
+    "total_spent": 1600,
+    "ways_to_save": [
+      "Buy weekly or monthly airtime and data bundles instead of purchasing airtime in bulk without a plan to get better value.",
+      "Prepare your own tea or pack lunch from home a few days a week to lower your food expenses.",
+      "Consider taking matatus or off-peak rides for non-urgent trips rather than taking an Uber."
+    ]
+  }
+}
